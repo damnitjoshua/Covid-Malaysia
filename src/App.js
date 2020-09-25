@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import './App.css';
 import axios from "axios";
+import Moment from 'react-moment';
+
 
 function App() {
 
@@ -21,6 +23,7 @@ function App() {
 
   const date = new Date(parseInt(latest.updated));
   const lastUpdated = date.toString();
+  
 
   return (
     <div className="App">
@@ -93,6 +96,7 @@ function App() {
             Feedback:<br></br>
             - <a href="mailto:joshuachew8118@gmail.com?Subject=Covid-19 website feedback">Email</a><br></br>
             - <a href="https://t.me/damnitjoshua">Telegram</a><br></br>
+            - <a href="https://github.com/damnitjoshua/Covid-Malaysia">Project GitHub</a><br></br>
             <br></br>
             Made with ❤️ by Joshua Chew
           </h3>
@@ -101,5 +105,6 @@ function App() {
     </div>
   );
 }
+
 
 export default App;
