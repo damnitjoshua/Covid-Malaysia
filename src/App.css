@@ -97,8 +97,8 @@ nav{
   margin-top: 10px;
   letter-spacing: 0.2px;
   line-height: 30px;
-  font-weight: 500;
-  color: #6b6b6b;
+  font-weight: 400;
+  color: #686868;
   font-size: 20px;
   width: 70%;
 }
@@ -122,6 +122,8 @@ nav{
 
   .logo{
       font-size: 16px;
+      padding: 10px 0;
+      line-height: 30px;
   }
 
   .rightlink{
@@ -130,6 +132,7 @@ nav{
 
   .header{
       font-size: 34px;
+      line-height: 45px;
       margin: 30px 20px;
       width: auto;
   }
@@ -167,7 +170,7 @@ nav{
   }
 
   .cont{
-    padding: 40px 20px;
+    padding: 20px 20px 60px 20px;
   }
 
   .cont > h2 {
@@ -183,7 +186,7 @@ nav{
 
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 450px) {
   nav{
       border-bottom: solid 3px #8E8E8E;
       overflow: hidden;
@@ -192,7 +195,7 @@ nav{
   }
 
   .logo{
-      font-size: 10px;
+      font-size: 12px;
   }
 
   .rightlink{
