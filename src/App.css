@@ -41,7 +41,8 @@ nav{
 }
 
 .header{
-  font-size: 56px;
+  font-size: 50px;
+  line-height: 70px;
   font-weight: 600;
   margin: 30px 40px;
   padding: 0;
@@ -82,7 +83,7 @@ nav{
 
 .cont{
   background-color: #F8F8F8;
-  padding: 40px 40px;
+  padding: 40px 40px 80px 40px;
 }
 
 .cont > h2 {
@@ -93,9 +94,12 @@ nav{
 }
 
 .cont > h3 {
+  margin-top: 10px;
+  letter-spacing: 0.2px;
+  line-height: 30px;
   font-weight: 500;
-  color: #5e5e5e;
-  font-size: 23px;
+  color: #6b6b6b;
+  font-size: 20px;
   width: 70%;
 }
 
@@ -125,7 +129,7 @@ nav{
   }
 
   .header{
-      font-size: 40px;
+      font-size: 34px;
       margin: 30px 20px;
       width: auto;
   }
@@ -167,12 +171,61 @@ nav{
   }
 
   .cont > h2 {
+    font-size: 26px;
+  }
+
+  .cont > h3 {
+    width: 80%;
+    font-size: 18px;
+    line-height: 32px;
+    margin-top: 10px;
+  }
+
+}
+
+@media only screen and (max-width: 400px) {
+  nav{
+      border-bottom: solid 3px #8E8E8E;
+      overflow: hidden;
+      line-height: 60px;
+      margin: 0 20px;
+  }
+
+  .logo{
+      font-size: 10px;
+  }
+
+  .rightlink{
+    display: none;
+  }
+
+  .header{
+      font-size: 30px;
+      margin: 30px 20px;
+      width: auto;
+  }
+
+  .numflex > div {
+    padding: 20px 0;
+  }
+
+  .numflex > div > h2 {
+      font-size: 22px;
+      line-height: 26px;
+  }
+
+  .numflex > div > h2 > span {
+      font-size: 15px;
+  }
+
+  .cont > h2 {
     font-size: 24px;
   }
 
   .cont > h3 {
-    font-size: 20px;
-    line-height: 34px;
+    width: 100%;
+    font-size: 17px;
+    line-height: 25px;
     margin-top: 10px;
   }
 
