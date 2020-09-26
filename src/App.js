@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './App.css';
 import axios from "axios";
+import Darkmode from 'darkmode-js';
 import Moment from 'react-moment';
 
 
@@ -21,15 +22,34 @@ function App() {
       });
   }, []);
 
+  var moment = require('moment'); // require
   const date = new Date(parseInt(latest.updated));
   const lastUpdated = date.toString();
+  let resultDate=moment(lastUpdated).format('LLL');
+
+  const options = {
+    bottom: '30px', // default: '32px'
+    right: '30px', // default: '32px'
+    left: 'unset', // default: 'unset'
+    time: '0', // default: '0.3s'
+    mixColor: '#fff', // default: '#fff'
+    backgroundColor: '#fff',  // default: '#fff'
+    buttonColorDark: '#100f2c',  // default: '#100f2c'
+    buttonColorLight: '#fff', // default: '#fff'
+    saveInCookies: false, // default: true,
+    label: '🌓', // default: ''
+    autoMatchOsTheme: true // default: true
+  }
+  
+  const darkmode = new Darkmode(options);
+  darkmode.showWidget();
   
 
   return (
     <div className="App">
       <main>
         <nav>
-          <a href="" className="logo">{lastUpdated}</a>
+          <a href="" className="logo"><moment>Updated on {resultDate}</moment></a>
           <a href="#about" className="rightlink">About</a>
         </nav>
 
@@ -37,13 +57,13 @@ function App() {
 
         <div className="numflex">
           <div className="flex1">
-            <h2>{latest.cases}<br></br><span>total cases</span></h2>
+            <h2>{latest.cases} cases<br></br><span>(+{latest.todayCases})</span></h2>
           </div>
           <div className="flex2">
-            <h2>{latest.recovered}<br></br><span>cured</span></h2>
+            <h2>{latest.recovered} cured<br></br><span>(+{latest.todayRecovered})</span></h2>
           </div>
           <div className="flex3">
-            <h2>{latest.deaths}<br></br><span>deaths</span></h2>
+            <h2>{latest.deaths} deaths<br></br><span>(+{latest.todayDeaths})</span></h2>
           </div>
         </div>
 
@@ -98,7 +118,7 @@ function App() {
             - <a href="https://t.me/damnitjoshua">Telegram</a><br></br>
             - <a href="https://github.com/damnitjoshua/Covid-Malaysia">Project GitHub</a><br></br>
             <br></br>
-            Made with ❤️ by Joshua Chew
+            Made with <span className="darkmode-ignore">❤️</span> by Joshua Chew
           </h3>
         </div>
       </main>
