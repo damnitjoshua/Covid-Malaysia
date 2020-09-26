@@ -1,5 +1,6 @@
-[![Netlify Status](https://api.netlify.com/api/v1/badges/203a8970-f9cd-458a-92e5-a4f2495445d5/deploy-status)](https://app.netlify.com/sites/covidmalaysia/deploys)
 [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/203a8970-f9cd-458a-92e5-a4f2495445d5/deploy-status)](https://app.netlify.com/sites/covidmalaysia/deploys)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
